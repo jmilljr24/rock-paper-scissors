@@ -67,21 +67,6 @@ function playRound(playerSelection, computerSelection) {
 let userScore = 0;
 let computerScore = 0;
 
-// function game() {
-//   for (let i = 0; i < 5; i++) {
-//     let userInput = window.prompt("Rock, Paper or Scissor?");
-//     let computerChoice = computerRandomSelection();
-//     console.log(playRound(userInput, computerChoice));
-//     console.log("Computer", computerScore);
-//     console.log("Me", userScore);
-//   }
-//   if (userScore > computerScore) {
-//     console.log("You are the Winner!!");
-//   } else if (userScore < computerScore) {
-//     console.log("You lost! Try again");
-//   } else console.log("It's a draw!");
-// }
-
 const container = document.querySelector("#container"); // DOM to display round results after button press
 const results = document.createElement("div");
 results.classList.add("results");
@@ -105,8 +90,6 @@ buttons.forEach((button) => {
     game(button.id);
   });
 });
-
-// results.innerHTML = playRound(userInput, computerChoice);
 
 function game(userInput) {
   let playerSelection = userInput;
